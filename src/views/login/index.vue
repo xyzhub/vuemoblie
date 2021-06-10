@@ -89,6 +89,8 @@ export default {
         this.$store.commit('setUser', res.data)
         console.log(res)
         this.$toast.success('登录成功')
+        // 跳转到个人中心(判断是否有重定向的地址)
+        this.$router.replace(this.$route.query.url || '/user')
       } catch (error) {
         this.$toast.fail('登录失败')
         console.log(error)

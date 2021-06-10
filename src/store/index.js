@@ -10,11 +10,13 @@ export default new Vuex.Store({
     user: getItem('UserToken') || {}
   },
   getters: {
+    // token
     token: state => state.user.token
   },
   mutations: {
     // 设置用户信息
     setUser (state, data) {
+      // 设置给state
       state.user = data
       // 用户信息存储到本地存储
       setItem('UserToken', data)
