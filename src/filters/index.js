@@ -15,3 +15,10 @@ export function getRelativeTime (val) {
 export function testStr (val) {
   return '$' + val
 }
+
+// 文字高亮
+export function textActive (val, str) {
+  const reg = new RegExp(str, 'ig')
+  // 替换字符串
+  return val.replace(reg, `<span style='color:red;'>${str}</span>`)
+}

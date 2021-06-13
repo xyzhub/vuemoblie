@@ -7,7 +7,7 @@
                   type="info"
                   size="small"
                   round
-                  icon="search">搜索</van-button>
+                  icon="search" @click="$router.push('/search')">搜索</van-button>
     </van-nav-bar>
     <!-- /导航栏 -->
     <van-tabs class="channel-tabs"

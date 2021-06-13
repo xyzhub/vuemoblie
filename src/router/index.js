@@ -38,6 +38,13 @@ const routes = [
     name: 'Collect',
     component: () => import('@/views/user/collect'),
     meta: { title: '收藏', needLogin: true }
+  },
+  // 搜索
+  {
+    path: '/search',
+    name: 'Search',
+    component: () => import('@/views/search'),
+    meta: { title: '搜索' }
   }
 ]
 
